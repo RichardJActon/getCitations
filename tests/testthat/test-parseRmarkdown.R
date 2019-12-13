@@ -4,7 +4,7 @@ test_that("bibliography line parsing works", {
 		"library.xyx",
 		"~/library.bib",
 		"/long/path/to/library.bib",
-		"`r normalizePath('inst/extdata/library.bib')`",
+		#"`r normalizePath('inst/extdata/library.bib')`",
 		"[library.bib, other.bib]"
 	)
 	biblines <- paste0("bibliography: ", bibtypes)
@@ -13,7 +13,7 @@ test_that("bibliography line parsing works", {
 		"library.xyx",
 		"~/library.bib",
 		"/long/path/to/library.bib",
-		"inst/extdata/library.bib", ## envionment...?
+		#"inst/extdata/library.bib", ## envionment...?
 		c("library.bib","other.bib")
 	)
 
@@ -23,6 +23,9 @@ test_that("bibliography line parsing works", {
 			parseBib(.x), .y
 		)
 	)
+
+	expect_warning(parseBib("bibliography: `r normalizePath('inst/extdata/library.bib')`"))
+
 })
 
 test_that("citaion extraction works",{
