@@ -13,8 +13,13 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     readr,
-    stringr
+    stringr,
+    purrr,
+    bib2df,
+    dplyr
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    covr
 URL: https://github.com/RichardJActon/getCitations
 BugReports: https://github.com/RichardJActon/getCitations/issues
+RoxygenNote: 6.1.1

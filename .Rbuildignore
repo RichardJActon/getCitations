@@ -1,3 +1,6 @@
 ^getCitations\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^\.travis\.yml$
+^README\.Rmd$
+^codecov\.yml$
