@@ -4,7 +4,7 @@
 #' @param bibpath specifcy the master citations file path manuals (defaults to current bibliography in the Rmd file)
 #' @export
 getCitations <- function(Rmd, outpath, bibpath = NULL) {
-	if(!is.null(bibpath)) {
+	if(is.null(bibpath)) {
 		bib <- getBib(Rmd)
 	} else {
 		bib <- bibpath
