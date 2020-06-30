@@ -4,7 +4,14 @@
 \alias{getCitations}
 \title{getCitations}
 \usage{
-getCitations(Rmd, path)
+getCitations(Rmd, outpath, bibpath = NULL)
+}
+\arguments{
+\item{Rmd}{the rmarkdown file to parse}
+
+\item{outpath}{the location of the new citations file}
+
+\item{bibpath}{specifcy the master citations file path manuals (defaults to current bibliography in the Rmd file)}
 }
 \description{
 getCitations

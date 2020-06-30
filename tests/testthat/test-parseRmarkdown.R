@@ -34,3 +34,13 @@ test_that("citaion extraction works",{
 		getKeys(system.file("extdata", "exampleNotebook.Rmd", package = "getCitations"))
 	)
 })
+
+test_that("Manual Specification of bibpath works", {
+	expect_equal(
+		getCitations:::readBibs(
+			system.file("extdata", "library.bib", package = "getCitations")
+		)$BIBTEXKEY,
+		c("test2017a", "jones2023", "allen1978", "other1995")
+	)
+})
+

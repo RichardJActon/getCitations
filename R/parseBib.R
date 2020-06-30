@@ -1,5 +1,5 @@
 readBibs <- function(file) {
-	purrr::map_df(file,bib2df::bib2df)
+	purrr::map_df(file, bib2df::bib2df)
 }
 
 filterBibs <- function(bibtab, keys){
