@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/RichardJActon/getCitations/branch/master/graph/badge.svg)](https://codecov.io/gh/RichardJActon/getCitations?branch=master)
 <!-- badges: end -->
 
-The goal of getCitations is to get all the citaions from your Rmarkdown files and select a subset of your main citations library for distribution with your project
+The goal of `getCitations` is to get all the citations from your Rmarkdown files and select a subset of your main citations library for distribution with your project
 
 ## Installation
 
@@ -32,7 +32,7 @@ remotes::install_github("RichardJActon/getCitations")
 ```
 ## Example
 
-```{r example}
+```{r example, eval = FALSE}
 library(getCitations)
 
 myRmd <- system.file("extdata", "exampleNotebook.Rmd", package = "getCitations")
