@@ -22,4 +22,4 @@ Suggests:
     covr
 URL: https://github.com/RichardJActon/getCitations
 BugReports: https://github.com/RichardJActon/getCitations/issues
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

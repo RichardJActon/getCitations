@@ -28,7 +28,7 @@ The development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("RichardJActon/getCitations")
+remotes::install_github("RichardJActon/getCitations")
 ```
 ## Example
 

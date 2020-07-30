@@ -21,7 +21,7 @@ The development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("RichardJActon/getCitations")
+remotes::install_github("RichardJActon/getCitations")
 ```
 
 ## Example
@@ -34,8 +34,9 @@ getCitations(
     myRmd, # Rmd file or vector thereof
     "./local.bib" # destination for local library
 )
-#> Warning: distinct() does not fully support columns of type `list`.
-#> List elements are compared by reference, see ?distinct for details.
-#> This affects the following columns:
-#> - `AUTHOR`, `EDITOR`
+#> Warning: `as_data_frame()` is deprecated as of tibble 2.0.0.
+#> Please use `as_tibble()` instead.
+#> The signature and semantics have changed, see `?as_tibble`.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_warnings()` to see where this warning was generated.
 ```
